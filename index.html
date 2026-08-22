@@ -1,0 +1,484 @@
+<html lang="en">
+<head>
+  <script type="text/javascript" src="https://api.goaffpro.com/loader.js?shop=xidzxqapru"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELINUA | Botanical Skincare</title>
+    <style>
+        :root {
+            --bg-silver-light: #e8ecef;
+            --text-dark: #1a1c1e;
+            --text-muted: #4a5056;
+            --silver-metal: #717882;
+            --silver-heading-gradient: linear-gradient(135deg, #111213 0%, #484e55 60%, #202326 100%);
+            --border-subtle: rgba(0, 0, 0, 0.08);
+        }
+ 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+ 
+        html {
+            scroll-behavior: smooth;
+        }
+ 
+        body {
+            background-color: var(--bg-silver-light);
+            color: var(--text-muted);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+ 
+        header {
+            width: 100%;
+            max-width: 900px;
+            padding: 45px 20px 25px;
+            text-align: center;
+        }
+ 
+        .brand-title {
+            font-size: 2.8rem;
+            letter-spacing: 9px;
+            text-transform: uppercase;
+            background: var(--silver-heading-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 300;
+        }
+ 
+        .brand-subtitle {
+            font-size: 0.8rem;
+            letter-spacing: 4px;
+            color: var(--silver-metal);
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-top: 6px;
+        }
+ 
+        nav {
+            margin-top: 25px;
+        }
+ 
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin: 0 14px;
+            font-size: 0.85rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+            font-weight: 500;
+            cursor: pointer;
+        }
+ 
+        nav a:hover {
+            color: var(--text-dark);
+        }
+ 
+        main {
+            width: 100%;
+            max-width: 900px;
+            padding: 20px 20px 40px;
+        }
+ 
+        /* Product Section */
+        .product-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 30px 0 60px;
+            align-items: center;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+ 
+        .product-image-box {
+            flex: 1 1 380px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        .product-image-box img {
+            width: 100%;
+            height: auto;
+            max-height: 550px;
+            display: block;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+        }
+ 
+        .product-info {
+            flex: 1 1 380px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+ 
+        .product-title {
+            font-size: 1.8rem;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+ 
+        .price {
+            font-size: 1.35rem;
+            color: var(--silver-metal);
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+ 
+        .product-description {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+            font-weight: 400;
+        }
+ 
+        .features-list {
+            list-style: none;
+            margin-bottom: 30px;
+            border-top: 1px solid var(--border-subtle);
+            padding-top: 18px;
+        }
+ 
+        .features-list li {
+            position: relative;
+            padding-left: 22px;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+ 
+        .features-list li::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: var(--text-dark);
+        }
+ 
+        .buy-btn {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            text-align: center;
+            background-color: var(--text-dark);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            cursor: pointer;
+        }
+ 
+        .buy-btn:hover {
+            background-color: #33373b;
+        }
+ 
+        /* Key Benefits Section */
+        .benefits-section {
+            padding: 70px 0 30px;
+            text-align: center;
+        }
+ 
+        .benefit-item {
+            margin-bottom: 45px;
+        }
+ 
+        .benefit-item:last-child {
+            margin-bottom: 0;
+        }
+ 
+        .benefit-title {
+            font-size: 1.15rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--text-dark);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+ 
+        .benefit-desc {
+            color: var(--text-muted);
+            font-size: 0.92rem;
+            max-width: 500px;
+            margin: 0 auto;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+ 
+        /* Footer Section */
+        footer {
+            width: 100%;
+            max-width: 900px;
+            border-top: 1px solid var(--border-subtle);
+            padding: 40px 20px 50px;
+            text-align: center;
+            color: var(--silver-metal);
+            font-size: 0.85rem;
+            margin-top: auto;
+        }
+ 
+        .contact-info {
+            margin-bottom: 16px;
+            color: var(--text-dark);
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+ 
+        .contact-info a {
+            color: var(--text-dark);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--text-dark);
+        }
+ 
+        .contact-address {
+            margin-bottom: 16px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            line-height: 1.7;
+            letter-spacing: 0.3px;
+        }
+ 
+        .contact-address strong {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+ 
+        .footer-links {
+            margin-top: 12px;
+        }
+ 
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin: 0 10px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+ 
+        .footer-links a:hover {
+            color: var(--text-dark);
+        }
+ 
+        .copyright {
+            margin-top: 20px;
+            font-size: 0.75rem;
+            color: var(--silver-metal);
+        }
+ 
+        /* Policy Modal Popup Design */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(4px);
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+ 
+        .modal-content {
+            background-color: #ffffff;
+            color: var(--text-dark);
+            max-width: 600px;
+            width: 100%;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            position: relative;
+            animation: fadeIn 0.3s ease-out;
+        }
+ 
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+ 
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--silver-metal);
+        }
+ 
+        .close-btn:hover {
+            color: var(--text-dark);
+        }
+ 
+        .modal-title {
+            font-size: 1.3rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+ 
+        .modal-body {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+ 
+<header>
+    <h1 class="brand-title">SELINUA</h1>
+    <p class="brand-subtitle">Botanical Skincare</p>
+    <nav>
+        <a href="#product">Product</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+ 
+<main>
+    <!-- Product Section -->
+    <section id="product" class="product-section">
+        <div class="product-image-box">
+            <img src="product.jpg" alt="SELINUA Luxurious Plum Kernel Oil Serum">
+        </div>
+        <div class="product-info">
+            <h2 class="product-title">Luxurious Plum Kernel Oil Serum</h2>
+            <div class="price">$48.00 USD</div>
+            <p class="product-description">
+                100% Organic Cold-Pressed Plum Kernel Serum infused with Organic Rosemary. Masterfully formulated to deeply nourish, restore balance, and illuminate all skin types.
+            </p>
+            <ul class="features-list">
+                <li>100% Organic Cold-Pressed Ingredients</li>
+                <li>Infused with Organic Rosemary Extract</li>
+                <li>Formulated for All Skin Types</li>
+                <li>30 ml / 1 fl oz</li>
+            </ul>
+            <a href="https://buy.stripe.com/eVq6oHf7qgeq99995YaMU00" class="buy-btn">SHOP NOW</a>
+        </div>
+    </section>
+ 
+    <!-- Key Benefits Section -->
+    <section id="benefits" class="benefits-section">
+        <div class="benefit-item">
+            <h3 class="benefit-title">DEEP HYDRATION</h3>
+            <p class="benefit-desc">Rich in essential fatty acids from pure plum kernel oil to restore skin barrier.</p>
+        </div>
+ 
+        <div class="benefit-item">
+            <h3 class="benefit-title">ANTIOXIDANT BOOST</h3>
+            <p class="benefit-desc">Infused with organic rosemary extract to protect and revitalize tired skin.</p>
+        </div>
+ 
+        <div class="benefit-item">
+            <h3 class="benefit-title">SILKY FINISH</h3>
+            <p class="benefit-desc">Lightweight, non-greasy botanical formulation absorbing effortlessly.</p>
+        </div>
+    </section>
+</main>
+ 
+<footer id="contact">
+    <div class="contact-info">
+        Customer Support: <a href="mailto:contact@selinua.com">contact@selinua.com</a>
+    </div>
+
+    <div class="contact-address">
+        <strong>SELINUA LLC</strong><br>
+        7901 4th st N STE 300<br>
+        St. Petersburg Fl, 33702<br>
+        USA
+    </div>
+ 
+    <div class="footer-links">
+        <a onclick="openPolicy('shipping')">Shipping Policy</a> | 
+        <a onclick="openPolicy('returns')">Return Policy</a> | 
+        <a onclick="openPolicy('privacy')">Privacy Policy</a>
+    </div>
+ 
+    <p class="copyright">© 2026 SELINUA. All rights reserved.</p>
+</footer>
+ 
+<!-- Policy Modal Popup -->
+<div id="policyModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closePolicy()">×</span>
+        <h2 id="modalTitle" class="modal-title"></h2>
+        <div id="modalBody" class="modal-body"></div>
+    </div>
+</div>
+ 
+<script>
+    const policies = {
+        shipping: {
+            title: "Shipping Policy",
+            content: "We offer fast nationwide shipping across the United States. All orders are processed within 1–2 business days. Standard delivery typically takes 3–5 business days. Once your order has shipped, you will receive a confirmation email with automated tracking details."
+        },
+        returns: {
+            title: "Return Policy",
+            content: "Your satisfaction is our absolute priority. If you are not completely satisfied with your purchase, we accept returns on unopened products within 30 days of delivery. To initiate a hassle-free return or replacement, please reach out directly to contact@selinua.com."
+        },
+        privacy: {
+            title: "Privacy Policy",
+            content: "At SELINUA, we treat your personal data with the utmost security and confidentiality. All transactions and details entered during checkout are fully protected using industry-standard SSL encryption. Your information is strictly used to fulfill your orders and will never be shared or sold to third parties."
+        }
+    };
+ 
+    function openPolicy(type) {
+        document.getElementById('modalTitle').innerText = policies[type].title;
+        document.getElementById('modalBody').innerText = policies[type].content;
+        document.getElementById('policyModal').style.display = 'flex';
+    }
+ 
+    function closePolicy() {
+        document.getElementById('policyModal').style.display = 'none';
+    }
+ 
+    // Close modal if user clicks outside of modal content
+    window.onclick = function(event) {
+        const modal = document.getElementById('policyModal');
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    }
+</script>
+
+<!-- GoAffPro Conversion Tracking -->
+<script>
+  var goaffproOrder = {
+    order_id: "ORDER_ID",
+    total: 0.00,
+    currency: "USD",
+    email: "CUSTOMER_EMAIL"
+  };
+</script>
+<script src="https://api.goaffpro.com/loader.js?shop=xidzxqapru"></script>
+
+</body>
+</html>
+
+ 
+ 
+ 
+</body>
+</html>
